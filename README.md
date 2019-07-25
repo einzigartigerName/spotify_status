@@ -7,10 +7,17 @@ The tool waits for a notfication by Spotify and asks for the metadata of the cur
 * Python `dbus`
 * Python `gi.repository`
 
-### Example usage: [Polybar](https://github.com/jaagr/polybar)
+### Usage:
+Adjust the path to `status.py` in `monitor.py`:
+```python
+def print_status():
+    os.system("path/to/script/spotify_status/status.py")
+```
+
+#### Example for [Polybar](https://github.com/jaagr/polybar)
 ```ini
 [module/spotify]
 type = custom/script
-exec = python /path/to/script/spotify_status.py
+exec = python /path/to/script/spotify_status/monitor.py
 format = <label>
 ```
