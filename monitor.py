@@ -6,7 +6,7 @@ from dbus.mainloop.glib import DBusGMainLoop
 import os
 
 def print_status():
-    os.system("path/to/script/spotify_status/status.py")
+    os.system("python path/to/script/spotify_status/status.py")
 
 def monitor_notification(bus, message):
 

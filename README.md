@@ -11,7 +11,7 @@ The tool waits for a notfication by Spotify and asks for the metadata of the cur
 Adjust the path to `status.py` in `monitor.py`:
 ```python
 def print_status():
-    os.system("path/to/script/spotify_status/status.py")
+    os.system("python path/to/script/spotify_status/status.py")
 ```
 
 #### Example for [Polybar](https://github.com/jaagr/polybar)
